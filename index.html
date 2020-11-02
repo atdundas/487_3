@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--Meta-->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="Project 3 for MEJO-487" />
+    <meta name="author" content="Andrew Dundas" />
+    <title>Welcome to Project 1</title>
+    
+    <!--Bootstrap-->
+    <link
+      rel="canonical"
+      href="https://getbootstrap.com/docs/4.5/examples/starter-template/"
+    />
+
+    <!-- Bootstrap core CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    
+    <!-- C3 -->
+    <link rel="stylesheet" href="css\c3.min.css">
+
+    <!-- Data tables -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.22/css/jquery.dataTables.css">
+
+    <!-- Custom styles -->
+    <link href="css\style.css" rel="stylesheet" />
+
+    <!--End Head-->
+  </head>
+
+  <body>
+      
+    <nav class="navbar smart-scroll navbar-expand-md navbar-light fixed-top">
+        <a class="navbar-brand" href="#"><img id="ring-logo" src="img\logo.png" alt="Int Geo Logo"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse flex-row-reverse" id="navbarsExampleDefault">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Nat Geo Family <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Renew</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Subscribe</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Menu</a>
+              <div class="dropdown-menu" aria-labelledby="dropdown01">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <div id="header-img" class="container-fluid mw-100 p-0">
+          <div class="d-flex justify-content-end p-5" id="title-text">
+            <div>
+              <h4 id="title-h4"><a class="yellow">׀</a> Science <a class="yellow">׀</a></h4>
+              <h1 id="title-h1">Light Pollution and Population Change</h1>
+              <p class="title-p">Comparing light pollution trends in the top 10 growing and shrinking cities</p>
+            </div>
+          </div>
+      </div>
+      
+      <main role="main" class="container mt-4">
+
+        <div class="w-75 mx-auto">
+          <p class="caption"> A photo taken from the ISS while traveling above Africa, showing Sicily and much of Italy.</p>
+          <p class="caption-att"> NASA Image and Video Gallery (29 July 2013)</p>
+
+          <p>There isn't much to see at night on a rural Kansas highway—less even than during the day. The sky is as big as ever, though, and dotted with stars innumerable as the crops which it sits above. Staring out the window as a kid, forehead against that glass, I watched as the car approached a glow, a glow which seemed to grow with every passing minute. I imagined it was a spaceship, hovering in the clouds, as unknown to us as we were to it.</p>
+
+          <p>But as the minutes passed and buildings began to appear, the glow moved overhead—no longer in the distance, but part of the atmosphere. The city was around us now, and the hazy sky turned orange. As much as I'd dreamt of starships, this was nothing odd. The heavens were in the countryside, I knew, but in cities hidden with an incandescent hue.</p>
+
+          <h3>Population/Light Pollution Change</h3>
+          <p></p>
+          <p>The chart below compares the percent change of population growth and shifts in light pollution for the the ten fastest growing statistical areas in the USA and the ten fastest shrinking. Population data is from the US Census Bureau, while light pollution data comes from Radiance Light Trends.</p>
+        </div>
+        <div class="mt-5" id="change-chart"></div>
+  
+        <div class="w-75 mx-auto">
+          <div id="editors-box" class="m-2">
+            <p>Data note: The data used in this story has been complied from the US Census Bureau and Radiance Light Trends. The light Pollution data is collected monthly and varies seasonally. For the purposes of comparison and to account for the occasional missing data points for certain months, radiance data for each year has been averaged into a single number.</p>
+
+            <p>The area of data selection from Radiance Light Trends is created by hand, so all light pollution data is from the general area of the town/city and does not accurately reflect city limits or other designators of place. The data comes from NASA's VIIRS DNB and the creators of Radiance Light Trends note that the satellite does not expressly collect light pollution data. </p> 
+            
+            <p>Additionally, VIIRS DNB does not capture data in the same range as human eyes. The creators of Radiance Light Trends state, "The satellite data is therefore less sensitive to white light than the human eye, and has sensitivity at infrared wavelengths that the human eye cannot see. For this reason, when communities switch from orange high pressure sodium lamps to white LED, the satellites often report a drop in brightness even if a human would say that the white LEDs look brighter."</p>
+
+            <p>Sources:</p>
+            <p>Light Pollution: Radiance Light Trends, <a href="https://lighttrends.lightpollutionmap.info/#zoom=2.6065834401341954&lon=-98.74834&lat=38.09002">Link</a></p>
+            <p class="m-0">Population: US Census Bureau, <a href="https://www.census.gov/data/datasets/time-series/demo/popest/2010s-total-metro-and-micro-statistical-areas.html">Link</a></p>
+          </div>
+        </div> 
+      </main>
+
+        <div class="container-fluid mw-100 p-0">
+          <img class="mw-100 p-0" src="img\lightmap.png" alt="Map of light pollution from Radiance Light Trends">
+        </div>
+
+        <main role="main" class="container mt-4"> 
+          <!-- Tab links 1 -->
+          <div class="w-75 mx-auto">
+            <p class="caption"> A screen shot from Radiance Light Trends showing the USA in full. Light pollution varies by region, with the west being far less densely lit than the east.</p>
+            <p class="caption-att"> Radiance Light Trends / <a href="https://lighttrends.lightpollutionmap.info/#zoom=2.6065834401341954&lon=-98.74834&lat=38.09002">Link</a></p>
+
+            <h3>Growing Cities</h3>
+            <p>The graphs below compare light pollution trends to population growth in the ten fastest growing cities in the USA. The light pollution data used is a measurement of summed radiance. (More information on Radiance Light Trends.)</p>
+            <p>The charts show that generally as a cities population increase so does the amount of light pollution in its area. Prineville and Bend, Oregon show particularly large increases in light pollution. The percent growth of their radiance—respectively, 38% and 27%—outstripped their population growth. The only other area to do that among growing cities is Heber City, UT. <a href="#table-box">The shared traits of these cities explored here.</a></p>
+          </div>
+
+          <div class="tab d-flex justify-content-around flex-wrap">
+            <button class="tablinks" onclick="openCity(event, 'Villages-tab')">The Villages, FL</button>
+            <button class="tablinks" onclick="openCity(event, 'Myrtle-tab')">Myrtle Beach-Conway-North Myrtle Beach, SC-NC</button>
+            <button class="tablinks" onclick="openCity(event, 'Greeley-tab')">Greeley, CO</button>
+            <button class="tablinks" onclick="openCity(event, 'Bend-tab')">Bend, OR</button>
+            <button class="tablinks" onclick="openCity(event, 'Jefferson-tab')">Jefferson, GA</button>
+            <button class="tablinks" onclick="openCity(event, 'Prineville-tab')">Prineville, OR</button>
+            <button class="tablinks" onclick="openCity(event, 'Heber-tab')">Heber City, UT</button>
+            <button class="tablinks" onclick="openCity(event, 'Cape-tab')">Cape Coral-Fort Myers, FL</button>
+            <button class="tablinks" onclick="openCity(event, 'Granbury-tab')">Granbury, TX</button>
+            <button class="tablinks" onclick="openCity(event, 'Lakeland-tab')">Lakeland-Winter Haven, FL</button>
+          </div>
+
+          <!-- Tab content 1 -->
+          <div id="Villages-tab" class="tabcontent">
+            <h3>The Villages, FL</h3>
+            <div class="chart-mod">
+              <div id="Villages"></div>
+            </div>
+          </div>
+
+          <div id="Myrtle-tab" class="tabcontent">
+            <div class="chart-mod">
+              <h3>Myrtle Beach-Conway-North Myrtle Beach, SC-NC</h3>
+              <div id="Myrtle"></div>
+            </div>
+          </div>
+
+          <div id="Greeley-tab" class="tabcontent">
+            <div class="chart-mod">
+              <h3>Greeley, CO</h3>
+              <div id="Greeley"></div>
+            </div>
+          </div>
+
+          <div id="Bend-tab" class="tabcontent">
+            <div class="chart-mod">
+              <h3>Bend, OR</h3>
+              <div id="Bend"></div>
+            </div>
+          </div>
+
+          <div id="Jefferson-tab" class="tabcontent">
+            <div class="chart-mod">
+              <h3>Jefferson, GA</h3>
+              <div id="Jefferson"></div>
+            </div>
+          </div>
+
+          <div id="Prineville-tab" class="tabcontent">
+            <div class="chart-mod">
+              <h3>Prineville, OR</h3>
+              <div id="Prineville"></div>
+            </div>
+          </div>
+
+          <div id="Heber-tab" class="tabcontent">
+            <div class="chart-mod">
+              <h3>Heber City, UT</h3>
+              <div id="Heber"></div>
+            </div>
+          </div>
+
+          <div id="Cape-tab" class="tabcontent">
+            <div class="chart-mod">
+              <h3>Cape Coral-Fort Myers, FL</h3>
+              <div id="Cape"></div>
+            </div>
+          </div>
+
+          <div id="Granbury-tab" class="tabcontent">
+            <div class="chart-mod">
+              <h3>Granbury, TX</h3>
+              <div id="Granbury"></div>
+            </div>
+          </div>
+
+          <div id="Lakeland-tab" class="tabcontent">
+            <div class="chart-mod">
+              <h3>Lakeland-Winter Haven, FL</h3>
+              <div id="Lakeland"></div>
+            </div>
+          </div>
+          <!--End Tab content 1-->
+
+          <!-- Tab links 2 -->
+          <div class="w-75 mx-auto mt-3">
+            <h3>Shrinking Cities</h3>
+            <p> The data below shows that light pollution trends in shrinking cities are less clearly aligned with population change than in growing cities, though this fact is understandable on a couple fronts. Firstly, emigration out of a city is naturally less directly tied to location than immigration. New housing developments attract residents and expand a locations' light footprint, whereas departure could take place all across a city's residential areas. Secondly, cities are not likely to turn off the lights in area because it is less inhabited than it once was. Namely, if a street light is installed it will remain turned on.</p>
+            <p>The largest percent change in light pollution takes place in Pine Bluff, AR at 14%, followed by Mount Gay-Shamrock at -12%; both are Micropolitan Statistical Areas. In fact, eight of ten of the shrinking cities are considered micropolitan. <a href="#table-box">Jump to discussion of micropolitan versus metropolitan areas.</a></p>
+          </div>
+    
+          <div class="tab d-flex justify-content-around flex-wrap">
+            <button class="tablinks" onclick="openCity(event, 'Selma-tab')">Selma, AL</button>
+            <button class="tablinks" onclick="openCity(event, 'Mount-tab')">Mount Gay-Shamrock, WV</button>
+            <button class="tablinks" onclick="openCity(event, 'Fort-tab')">Fort Polk South, LA</button>
+            <button class="tablinks" onclick="openCity(event, 'Indianola-tab')">Indianola, MS</button>
+            <button class="tablinks" onclick="openCity(event, 'Cleveland-tab')">Cleveland, MS</button>
+            <button class="tablinks" onclick="openCity(event, 'Forrest-tab')">Forrest City, AR</button>
+            <button class="tablinks" onclick="openCity(event, 'PineBluff-tab')">Pine Bluff, AR</button>
+            <button class="tablinks" onclick="openCity(event, 'Morgan-tab')">Morgan City, LA</button>
+            <button class="tablinks" onclick="openCity(event, 'Portales-tab')">Portales, NM</button>
+            <button class="tablinks" onclick="openCity(event, 'Charleston-tab')">Charleston, WV</button>
+          </div>
+
+          <!-- Tab content 2 -->
+          <div id="Selma-tab" class="tabcontent">
+            <h3>Selma, AL</h3>
+            <div class="chart-mod">
+              <div id="Selma"></div>
+            </div>
+          </div>
+
+          <div id="Mount-tab" class="tabcontent">
+            <div class="chart-mod">
+              <h3>Mount Gay-Shamrock, WV</h3>
+              <div id="Mount"></div>
+            </div>
+          </div>
+
+          <div id="Fort-tab" class="tabcontent">
+            <div class="chart-mod">
+              <h3>Fort Polk South, LA</h3>
+              <div id="Fort"></div>
+            </div>
+          </div>
+
+          <div id="Indianola-tab" class="tabcontent">
+            <div class="chart-mod">
+              <h3>Indianola, MS</h3>
+              <div id="Indianola"></div>
+            </div>
+          </div>
+
+          <div id="Cleveland-tab" class="tabcontent">
+            <div class="chart-mod">
+              <h3>Cleveland, MS</h3>
+              <div id="Cleveland"></div>
+            </div>
+          </div>
+
+          <div id="Forrest-tab" class="tabcontent">
+            <div class="chart-mod">
+              <h3>Forrest City, AR</h3>
+              <div id="Forrest"></div>
+            </div>
+          </div>
+
+          <div id="PineBluff-tab" class="tabcontent">
+            <div class="chart-mod">
+              <h3>Pine Bluff, AR</h3>
+              <div id="PineBluff"></div>
+            </div>
+          </div>
+
+          <div id="Morgan-tab" class="tabcontent">
+            <div class="chart-mod">
+              <h3>Morgan City, LA</h3>
+              <div id="Morgan"></div>
+            </div>
+          </div>
+
+          <div id="Portales-tab" class="tabcontent">
+            <div class="chart-mod">
+              <h3>Portales, NM</h3>
+              <div id="Portales"></div>
+            </div>
+          </div>
+
+          <div id="Charleston-tab" class="tabcontent">
+            <div class="chart-mod">
+              <h3>Charleston, WV</h3>
+              <div id="Charleston"></div>
+            </div>
+          </div>
+          <!-- End Tab 2-->
+
+         <div id="table-box" class="w-75 mx-auto mt-3">
+          <h3>Micropolitan, Metropolitan—East, West</h3>
+           <p>All three of the fastest growing cities have at least one trait in common: either they are considered micropolitan areas and/or they are located in the west, where light pollution is less intense. To break that down, cities in the west are contributing light pollution to an area that is likely starting from zero instead of already being within the haze of another adjacent city. The micropolitan cities, Heber City and Prineville, their growth is likely to be outwards instead of upwards which requires lighting a large swath of land.</p>
+           <p>The data below includes percentage change data for every city as well as the additional field of "Area Type" which lists the size of the statistical area as either micropolitan or metropolitan.</p>
+
+           <h3>Data Table</h3>
+         </div>
+
+        <table id="table_id" class="display">
+
+        </table>
+
+</main><!-- /.container -->
+
+<div id="footer" class="container-fluid bg-dark mw-100 mt-5">
+  <p class="footer-p">This website was created for MEJO-487, a class of the UNC-Chapel Hill Hussman School of Journalism and Media.</p>
+</div>
+
+</body>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script
+    src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"
+  ></script>
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+  <script src="js\c3.min.js"></script>
+  <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.js"></script>
+  <script src="js/main.js"></script>
+</html>
