@@ -30,8 +30,6 @@ function buildCharts(lightpol){
     
  });
 
- console.log(popChange[0]); 
-
 
  var chart = c3.generate({
     bindto: '#change-chart',
@@ -88,6 +86,9 @@ function buildCharts(lightpol){
             "Population": '#000CFF',
             "Light Pollution": '#ffcc00',
         },
+    },
+    legend: {
+        position: 'right'
     },
     bar: {
         width: {
@@ -957,6 +958,7 @@ function loadData(){
     $.getJSON("data/lightpol.json", function(lightpol) {
         //console.log(lightpol);
         parseData(lightpol);
+        parseData2(lightpol);
     });
 };
 
@@ -978,21 +980,114 @@ function parseData(lightpol){
         var popChange = lightpol[index].POPChange;
         var liChange = lightpol[index].LIChange;
 
-        console.log(lightpol[index].NAME);
+        //console.log(lightpol[index].NAME);
         
         html += '<tr>';
         html += '<td>' + cityName + '</td>';
         html += '<td>' + areaType + '</td>';
         html += '<td>' + popChange + '%</td>';
         html += '<td>' + liChange + '%</td>';
-        html += '<tr>';
-
+        html += '</tr>';
     });
 
     $('#table_id').append(html);
 
     $('#table_id').DataTable({
         responsive: true,
+    });
+};
+
+function parseData2(lightpol){
+    var html = '';
+
+    html += '<thead><tr>';
+    html += '<th>Name</th>';
+    html += '<th>Area Type</th>';
+    html += '<th>Pop 2013</th>';
+    html += '<th>Pop 2014</th>';
+    html += '<th>Pop 2015</th>';
+    html += '<th>Pop 2016</th>';
+    html += '<th>Pop 2017</th>';
+    html += '<th>Pop 2018</th>';
+    html += '<th>Pop 2019</th>';
+    html += '<th>Population Change</th>';
+    html += '<th>Radiance 2013</th>';
+    html += '<th>Radiance 2014</th>';
+    html += '<th>Radiance 2015</th>';
+    html += '<th>Radiance 2016</th>';
+    html += '<th>Radiance 2017</th>';
+    html += '<th>Radiance 2018</th>';
+    html += '<th>Radiance 2019</th>';
+    html += '<th>Radiance Change</th>';
+    html += '</tr></thead>';
+
+
+
+    $.each(lightpol, function(index){
+        var cityName = lightpol[index].NAME;
+        var areaType = lightpol[index].LSAD;
+        var pop2013L = Number(lightpol[index].POP2013);
+        var pop2014L = Number(lightpol[index].POP2014);
+        var pop2015L = Number(lightpol[index].POP2015);
+        var pop2016L = Number(lightpol[index].POP2016);
+        var pop2017L = Number(lightpol[index].POP2017);
+        var pop2018L = Number(lightpol[index].POP2018);
+        var pop2019L = Number(lightpol[index].POP2019);
+        var pop2013 = pop2013L.toFixed();
+        var pop2014 = pop2014L.toFixed();
+        var pop2015 = pop2015L.toFixed();
+        var pop2016 = pop2016L.toFixed();
+        var pop2017 = pop2017L.toFixed();
+        var pop2018 = pop2018L.toFixed();
+        var pop2019 = pop2019L.toFixed();
+        console.log('Parse Data')
+        var popChange = lightpol[index].POPChange;
+        var li2013L = Number(lightpol[index].LI2013);
+        var li2014L = Number(lightpol[index].LI2014);
+        var li2015L = Number(lightpol[index].LI2015);
+        var li2016L = Number(lightpol[index].LI2016);
+        var li2017L = Number(lightpol[index].LI2017);
+        var li2018L = Number(lightpol[index].LI2018);
+        var li2019L = Number(lightpol[index].LI2019);
+        var li2013 = li2013L.toFixed();
+        var li2014 = li2014L.toFixed();
+        var li2015 = li2015L.toFixed();
+        var li2016 = li2016L.toFixed();
+        var li2017 = li2017L.toFixed();
+        var li2018 = li2018L.toFixed();
+        var li2019 = li2019L.toFixed();
+        var liChange = lightpol[index].LIChange;
+
+        console.log(lightpol[index].NAME);
+        
+        html += '<tr>';
+        html += '<td>' + cityName + '</td>';
+        html += '<td>' + areaType + '</td>';
+        html += '<td>' + pop2013 + '</td>';
+        html += '<td>' + pop2014 + '</td>';
+        html += '<td>' + pop2015 + '</td>';
+        html += '<td>' + pop2016 + '</td>';
+        html += '<td>' + pop2017 + '</td>';
+        html += '<td>' + pop2018 + '</td>';
+        html += '<td>' + pop2019 + '</td>';
+        html += '<td>' + popChange + '%</td>';
+        html += '<td>' + li2013 + '</td>';
+        html += '<td>' + li2014 + '</td>';
+        html += '<td>' + li2015 + '</td>';
+        html += '<td>' + li2016 + '</td>';
+        html += '<td>' + li2017 + '</td>';
+        html += '<td>' + li2018 + '</td>';
+        html += '<td>' + li2019 + '</td>';
+        html += '<td>' + liChange + '%</td>';
+        html += '</tr>';
+
+    });
+
+    $('#table_id_full').append(html);
+
+    $('#table_id_full').DataTable({
+        responsive: true,
+        "scrollX": true,
     });
 
 };

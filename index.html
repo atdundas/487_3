@@ -84,18 +84,18 @@
           <p class="caption"> A photo taken from the ISS while traveling above Africa, showing Sicily and much of Italy.</p>
           <p class="caption-att"> NASA Image and Video Gallery (29 July 2013)</p>
 
-          <p>There isn't much to see at night on a rural Kansas highway—less even than during the day. The sky is as big as ever, though, and dotted with stars innumerable as the crops which it sits above. Staring out the window as a kid, forehead against that glass, I watched as the car approached a glow, a glow which seemed to grow with every passing minute. I imagined it was a spaceship, hovering in the clouds, as unknown to us as we were to it.</p>
+          <p>There isn't much to see at night on a rural Kansas highway—less even than during the day. The sky is as big as ever, though, and dotted with stars innumerable as the crops above which it sits. Staring out the window as a kid, forehead against that glass, I watched as the car approached a glow, a glow which seemed to grow with every passing minute. I imagined it was a spaceship, hovering in the clouds, as unknown to us as we were to it.</p>
 
-          <p>But as the minutes passed and buildings began to appear, the glow moved overhead—no longer in the distance, but part of the atmosphere. The city was around us now, and the hazy sky turned orange. As much as I'd dreamt of starships, this was nothing odd. The heavens were in the countryside, I knew, but in cities hidden with an incandescent hue.</p>
+          <p>But as time passed and buildings began to appear, the glow moved from the horizon and appeared directly overhead, like the atmosphere was one dim neon light. The city was around us now, and the night sky turned a grey-orange. I could dream of starships, but this was nothing odd. The heavens were in the countryside, I knew, but in cities they hid behind an incandescent hue.</p>
 
           <h3>Population/Light Pollution Change</h3>
-          <p></p>
+          <p>According to the International Dark Sky Association light pollution affects 80% of the world's population and 99% of people in the US. Light pollution is defined as the excessive use of artificial light and can be linked to negative impacts including increased energy consumption, disruption to ecosystems, harms to human health and changes in crime and safety. Most famously, though, it is what causes stars to be less visible in some areas.</p>
           <p>The chart below compares the percent change of population growth and shifts in light pollution for the the ten fastest growing statistical areas in the USA and the ten fastest shrinking. Population data is from the US Census Bureau, while light pollution data comes from Radiance Light Trends.</p>
         </div>
         <div class="mt-5" id="change-chart"></div>
   
         <div class="w-75 mx-auto">
-          <div id="editors-box" class="m-2">
+          <div id="editors-box" class="m-2 p-3">
             <p>Data note: The data used in this story has been complied from the US Census Bureau and Radiance Light Trends. The light Pollution data is collected monthly and varies seasonally. For the purposes of comparison and to account for the occasional missing data points for certain months, radiance data for each year has been averaged into a single number.</p>
 
             <p>The area of data selection from Radiance Light Trends is created by hand, so all light pollution data is from the general area of the town/city and does not accurately reflect city limits or other designators of place. The data comes from NASA's VIIRS DNB and the creators of Radiance Light Trends note that the satellite does not expressly collect light pollution data. </p> 
@@ -103,8 +103,11 @@
             <p>Additionally, VIIRS DNB does not capture data in the same range as human eyes. The creators of Radiance Light Trends state, "The satellite data is therefore less sensitive to white light than the human eye, and has sensitivity at infrared wavelengths that the human eye cannot see. For this reason, when communities switch from orange high pressure sodium lamps to white LED, the satellites often report a drop in brightness even if a human would say that the white LEDs look brighter."</p>
 
             <p>Sources:</p>
-            <p>Light Pollution: Radiance Light Trends, <a href="https://lighttrends.lightpollutionmap.info/#zoom=2.6065834401341954&lon=-98.74834&lat=38.09002">Link</a></p>
-            <p class="m-0">Population: US Census Bureau, <a href="https://www.census.gov/data/datasets/time-series/demo/popest/2010s-total-metro-and-micro-statistical-areas.html">Link</a></p>
+
+            <div class="d-flex justify-content-between">
+              <a href="https://lighttrends.lightpollutionmap.info/#zoom=2.6065834401341954&lon=-98.74834&lat=38.09002"><button type="button" class="m-4 btn btn-dark">Light Pollution: Radiance Light Trends</button></a>
+              <a href="https://www.census.gov/data/datasets/time-series/demo/popest/2010s-total-metro-and-micro-statistical-areas.html"><button type="button" class="m-4 btn btn-dark">Population: US Census Bureau</button></a>
+            </div>
           </div>
         </div> 
       </main>
@@ -305,13 +308,12 @@
           <h3>Micropolitan, Metropolitan—East, West</h3>
            <p>All three of the fastest growing cities have at least one trait in common: either they are considered micropolitan areas and/or they are located in the west, where light pollution is less intense. To break that down, cities in the west are contributing light pollution to an area that is likely starting from zero instead of already being within the haze of another adjacent city. The micropolitan cities, Heber City and Prineville, their growth is likely to be outwards instead of upwards which requires lighting a large swath of land.</p>
            <p>The data below includes percentage change data for every city as well as the additional field of "Area Type" which lists the size of the statistical area as either micropolitan or metropolitan.</p>
-
-           <h3>Data Table</h3>
          </div>
+        <table id="table_id" class="display"></table>
 
-        <table id="table_id" class="display">
-
-        </table>
+        <h3>Data Table</h3>
+        <p>This table includes all data used in this project.</p>
+        <table id="table_id_full" class="display"></table>
 
 </main><!-- /.container -->
 
