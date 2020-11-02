@@ -20,6 +20,7 @@ function buildCharts(lightpol){
  //Var for bar chart
     var popChange = [];
     var liChange = [];
+    var areaName = [];
 
  //Builds Data Arrays for Bar Chart
 
@@ -27,6 +28,7 @@ function buildCharts(lightpol){
 
     popChange[index] = [lightpol[index].POPChange];
     liChange[index] = [lightpol[index].LIChange];
+    areaName[index] = [lightpol[index].NAME];
     
  });
 
@@ -100,28 +102,33 @@ function buildCharts(lightpol){
     axis: {
         x: {
             type: 'category',
-            categories: ['The Villages, FL',
-                         'Myrtle Beach, NC-SC', 
-                         'Greeley, CO', 
-                         'Bend, OR', 
-                         'Jefferson, GA', 
-                         'Prineville, OR', 
-                         'Heber City, UT', 
-                         'Cape Coral/Fort Myers, FL', 
-                         'Granbury, TX', 
-                         'Lakeland/Winter Haven, Fl', 
-                         'Milwaukee-Waukesha, WI', 
-                         'Elizabeth City, NC', 
-                         'Charleston, WV', 
-                         'Portales, NM', 
-                         'Morgan City, LA', 
-                         'Pine Bluff, AR', 
-                         'Forrest City, AR', 
-                         'Cleveland, MS', 
-                         'Indianola, MS', 
-                         'Fort Polk South, LA', 
-                         'Mount Gay/Shamrock, WV', 
-                         'Selma, AL',]
+            categories: [areaName[0], 
+                         areaName[1],
+                         areaName[2],
+                         areaName[3],
+                         areaName[4],
+                         areaName[5],
+                         areaName[6],
+                         areaName[7],
+                         areaName[8],
+                         areaName[9],
+                         areaName[10],
+                         areaName[11],
+                         areaName[12],
+                         areaName[13],
+                         areaName[14],
+                         areaName[15],
+                         areaName[16],
+                         areaName[17],
+                         areaName[18],
+                         areaName[19],
+                         areaName[20],
+                         areaName[21],],
+            tick: {
+                rotate: 50,
+                multiline: false
+            },
+            height: 185,
         }
     }
  });
@@ -1040,7 +1047,6 @@ function parseData2(lightpol){
         var pop2017 = pop2017L.toFixed();
         var pop2018 = pop2018L.toFixed();
         var pop2019 = pop2019L.toFixed();
-        console.log('Parse Data')
         var popChange = lightpol[index].POPChange;
         var li2013L = Number(lightpol[index].LI2013);
         var li2014L = Number(lightpol[index].LI2014);
